@@ -1,0 +1,5 @@
+crisbtreets = Chris Barthle <crisbtreets@unkno.wn>
+saracenob = Ben Saraceno <saracenob@unko.wn>
+sindre_mehus = Sindre Mehus <sindre@activeobjects.no>
+supware = Doug Melton <supware@unkno.wn>
+xmoby = Simon Trahan <xmoby@unkno.wn>
