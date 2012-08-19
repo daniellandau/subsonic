@@ -20,7 +20,7 @@ Subsonic is open-source software licensed under GPL.
 About
 -----
 
-Subsonic is developed by [Sindre Mehus](sindre@activeobjects.no). He lives in Oslo, Norway and works as a Java software consultant.
+Subsonic is developed by [Sindre Mehus](mailto:sindre@activeobjects.no). He lives in Oslo, Norway and works as a Java software consultant.
 
 This repository is maintained by [K and H Research Company](https://khresear.ch) and provides an unofficial version of Subsonic which does not contain the Licensing code checks present in the official builds. In addition, some minor changes to the repository have been made to assist in the building of a fully-free version for your own use. Any downloads associated with this repo are provided without warranty or guarantee, and your use of such files is at your own risk.
 
@@ -36,6 +36,7 @@ $ which mvn
 /usr/local/bin/mvn
 $ echo $JAVA_HOME
 /usr/lib/jvm/java-1.6.0-openjdk.x86_64
+$
 ```
 
 Now you can clone a copy of this repository and switch to the `release` branch if it is not automatically checked out:
@@ -44,6 +45,7 @@ Now you can clone a copy of this repository and switch to the `release` branch i
 $ git clone git://github.com/KHresearch/subsonic.git
 $ cd subsonic
 $ git checkout release
+$
 ```
 
 At this point you are ready to build the basic Subsonic WAR. The maintainer of this repository does not use any of the other build targets(Windows EXE installer, Android app, standalone RPM, etc), and no documentation is provided for them(Pull Requests welcomed).
@@ -53,8 +55,14 @@ $ mvn install
 <lots of buildspam>
 [INFO] Building war: /path/to/repo/subsonic/subsonic-main/target/subsonic.war
 <more buildspam>
+$
 ```
 
-You can now install this WAR into your Tomcat server's webapps/ directory. If you are feeling adventurous you can attempt to install the Official Subsonic Windows application and then switch the provided WAR with the one you just built(or grabbed from the [Downloads page](https://github.com/KHresearch/subsonic/downloads)). 
+You can now install this WAR into your Tomcat server's webapps/ directory. If you are feeling adventurous you can attempt to install the Official Subsonic Windows application and then switch the provided WAR with the one you just built(or grabbed from the [Downloads page](https://github.com/KHresearch/subsonic/downloads)).
+
+```
+$ cp subsonic-main/target/subsonic.war /var/lib/tomcat6/webapps/
+$
+```
 
 Good luck!
