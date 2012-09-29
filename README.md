@@ -58,7 +58,7 @@ $ mvn package
 $
 ```
 
-You can now cipy this WAR into your Tomcat server's webapps/ directory and deploy it from the Tomcat Manager. If you are feeling adventurous you can attempt to install the Official Subsonic Windows application and then switch the provided WAR with the one you just built(or grabbed from the [Downloads page](https://github.com/KHresearch/subsonic/downloads)).
+You can now copy this WAR into your Tomcat server's webapps/ directory and deploy it from the Tomcat Manager. If you are feeling adventurous you can attempt to install the Official Subsonic Windows application and then switch the provided WAR with the one you just built(or grabbed from the [Downloads page](https://github.com/KHresearch/subsonic/downloads)).
 
 ```
 $ cp subsonic-main/target/subsonic.war /var/lib/tomcat6/webapps/
