@@ -51,14 +51,14 @@ $
 At this point you are ready to build the basic Subsonic WAR. The maintainer of this repository does not use any of the other build targets(Windows EXE installer, Android app, standalone RPM, etc), and no documentation is provided for them(Pull Requests welcomed).
 
 ```
-$ mvn install
+$ mvn package
 <lots of buildspam>
 [INFO] Building war: /path/to/repo/subsonic/subsonic-main/target/subsonic.war
 <more buildspam>
 $
 ```
 
-You can now install this WAR into your Tomcat server's webapps/ directory. If you are feeling adventurous you can attempt to install the Official Subsonic Windows application and then switch the provided WAR with the one you just built(or grabbed from the [Downloads page](https://github.com/KHresearch/subsonic/downloads)).
+You can now cipy this WAR into your Tomcat server's webapps/ directory and deploy it from the Tomcat Manager. If you are feeling adventurous you can attempt to install the Official Subsonic Windows application and then switch the provided WAR with the one you just built(or grabbed from the [Downloads page](https://github.com/KHresearch/subsonic/downloads)).
 
 ```
 $ cp subsonic-main/target/subsonic.war /var/lib/tomcat6/webapps/
